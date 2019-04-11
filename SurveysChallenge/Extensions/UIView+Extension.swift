@@ -13,8 +13,7 @@ extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
-        }
-        set {
+        } set {
             layer.cornerRadius = newValue
             layer.masksToBounds = newValue > 0
         }
@@ -23,17 +22,15 @@ extension UIView {
     @IBInspectable var borderWidth: CGFloat {
         get {
             return layer.borderWidth
-        }
-        set {
+        } set {
             layer.borderWidth = newValue
         }
     }
     
     @IBInspectable var borderColor: UIColor? {
         get {
-            return UIColor(cgColor: layer.borderColor!)
-        }
-        set {
+            return UIColor(cgColor: layer.borderColor ?? UIColor.black.cgColor)
+        } set {
             layer.borderColor = borderColor?.cgColor
         }
     }  
@@ -46,8 +43,7 @@ extension CALayer {
         x: CGFloat = 0,
         y: CGFloat = 2,
         blur: CGFloat = 4,
-        spread: CGFloat = 0)
-    {
+        spread: CGFloat = 0) {
         shadowColor = color.cgColor
         shadowOpacity = alpha
         shadowOffset = CGSize(width: x, height: y)
