@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0qk-eg-L5T">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2I5-FV-8jp">
+            <objects>
+                <viewController id="0qk-eg-L5T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fdV-B2-dao">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-cv-dJF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_decoration" translatesAutoresizingMaskIntoConstraints="NO" id="W8m-l7-fwn">
+                                <rect key="frame" x="0.0" y="170" width="375" height="497"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Canh Tran" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-97-P5m">
+                                <rect key="frame" x="20" y="629" width="335" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's list of surveys in '2019'" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpS-UE-vLd">
+                                <rect key="frame" x="50" y="414.5" width="275" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SURVEYS CHALLENGE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNH-Wy-Oww">
+                                <rect key="frame" x="50" y="285.5" width="275" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W8m-l7-fwn" firstAttribute="bottom" secondItem="tE7-bv-iP3" secondAttribute="bottom" id="17e-Ma-ZKt"/>
+                            <constraint firstItem="tE7-bv-iP3" firstAttribute="bottom" secondItem="gbY-97-P5m" secondAttribute="bottom" constant="20" id="3rM-mA-QR6"/>
+                            <constraint firstItem="nNH-Wy-Oww" firstAttribute="leading" secondItem="tE7-bv-iP3" secondAttribute="leading" constant="50" id="6sC-ek-LI7"/>
+                            <constraint firstItem="KpS-UE-vLd" firstAttribute="top" secondItem="nNH-Wy-Oww" secondAttribute="bottom" constant="100" id="88h-gI-BNs"/>
+                            <constraint firstItem="gbY-97-P5m" firstAttribute="leading" secondItem="tE7-bv-iP3" secondAttribute="leading" constant="20" id="Ni8-80-vID"/>
+                            <constraint firstItem="W8m-l7-fwn" firstAttribute="top" secondItem="tE7-bv-iP3" secondAttribute="top" constant="150" id="ObR-e2-bra"/>
+                            <constraint firstAttribute="bottom" secondItem="MWD-cv-dJF" secondAttribute="bottom" id="Oiv-H8-uXQ"/>
+                            <constraint firstItem="MWD-cv-dJF" firstAttribute="leading" secondItem="tE7-bv-iP3" secondAttribute="leading" id="Th9-oX-XAy"/>
+                            <constraint firstItem="MWD-cv-dJF" firstAttribute="top" secondItem="fdV-B2-dao" secondAttribute="top" id="VRY-e6-2DK"/>
+                            <constraint firstAttribute="trailing" secondItem="MWD-cv-dJF" secondAttribute="trailing" id="Ywt-Nd-ZY6"/>
+                            <constraint firstItem="nNH-Wy-Oww" firstAttribute="centerY" secondItem="fdV-B2-dao" secondAttribute="centerY" multiplier="0.9" id="aep-iN-BCQ"/>
+                            <constraint firstItem="W8m-l7-fwn" firstAttribute="trailing" secondItem="tE7-bv-iP3" secondAttribute="trailing" id="bBB-pQ-f88"/>
+                            <constraint firstItem="tE7-bv-iP3" firstAttribute="trailing" secondItem="nNH-Wy-Oww" secondAttribute="trailing" constant="50" id="cvA-80-tpQ"/>
+                            <constraint firstItem="tE7-bv-iP3" firstAttribute="trailing" secondItem="gbY-97-P5m" secondAttribute="trailing" constant="20" id="gzG-4x-VH5"/>
+                            <constraint firstItem="tE7-bv-iP3" firstAttribute="trailing" secondItem="KpS-UE-vLd" secondAttribute="trailing" constant="50" id="ngP-WO-OwE"/>
+                            <constraint firstItem="W8m-l7-fwn" firstAttribute="leading" secondItem="tE7-bv-iP3" secondAttribute="leading" id="wCc-0Q-E6R"/>
+                            <constraint firstItem="KpS-UE-vLd" firstAttribute="leading" secondItem="tE7-bv-iP3" secondAttribute="leading" constant="50" id="y6o-KK-xf0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tE7-bv-iP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbW-t2-wH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_background" width="375" height="812"/>
+        <image name="splash_decoration" width="375" height="665"/>
+    </resources>
+</document>
