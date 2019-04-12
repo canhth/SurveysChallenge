@@ -10,9 +10,7 @@ import Foundation
 import RxSwift
 
 /// Use for fetch all the surveys list
-final class SurveysListRepository {
-    static let shared = SurveysListRepository(limitedPerPage: APIConst.pageLimit)
-    
+final class SurveysListRepository { 
     let apiState: Variable<APIState> = Variable(.stoped)
 
     private(set) var surveys: [Survey] = []
