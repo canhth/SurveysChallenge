@@ -36,6 +36,21 @@
 		A6096BF3225F8C7500F5C6EE /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF2225F8C7500F5C6EE /* UserToken.swift */; };
 		A6096BF5225F91B000F5C6EE /* AppDelegate+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF4225F91B000F5C6EE /* AppDelegate+Config.swift */; };
 		A6096BF7225F968400F5C6EE /* UserTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF6225F968400F5C6EE /* UserTokenRepository.swift */; };
+		A6096C042260DDBD00F5C6EE /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C032260DDBD00F5C6EE /* CoordinatorType.swift */; };
+		A6096C062260DDC400F5C6EE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C052260DDC400F5C6EE /* Coordinator.swift */; };
+		A6096C082260DDD100F5C6EE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C072260DDD100F5C6EE /* Router.swift */; };
+		A6096C0A2260DE0600F5C6EE /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C092260DE0600F5C6EE /* NavigationRouter.swift */; };
+		A6096C0C2260DE0F00F5C6EE /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C0B2260DE0F00F5C6EE /* Presentable.swift */; };
+		A6096C0E2260DE1F00F5C6EE /* CoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C0D2260DE1F00F5C6EE /* CoordinatorProtocols.swift */; };
+		A6096C102260DE2A00F5C6EE /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C0F2260DE2A00F5C6EE /* CoordinatorFactory.swift */; };
+		A6096C122260DE3200F5C6EE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C112260DE3200F5C6EE /* AppCoordinator.swift */; };
+		A6096C162260DE4D00F5C6EE /* AlertCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C152260DE4D00F5C6EE /* AlertCoordinator.swift */; };
+		A6096C1B2260E2C600F5C6EE /* MainSurveysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C1A2260E2C600F5C6EE /* MainSurveysViewController.swift */; };
+		A6096C1D2260E2DD00F5C6EE /* MakeSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C1C2260E2DD00F5C6EE /* MakeSurveyViewController.swift */; };
+		A6096C1F2260E4CA00F5C6EE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C1E2260E4CA00F5C6EE /* UIViewController+Ext.swift */; };
+		A6096C212260E56D00F5C6EE /* MakeSurveyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C202260E56D00F5C6EE /* MakeSurveyCoordinator.swift */; };
+		A6096C232260E96D00F5C6EE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C222260E96D00F5C6EE /* MainCoordinator.swift */; };
+		A6096C262260FE3F00F5C6EE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096C252260FE3F00F5C6EE /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +110,21 @@
 		A6096BF2225F8C7500F5C6EE /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 		A6096BF4225F91B000F5C6EE /* AppDelegate+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Config.swift"; sourceTree = "<group>"; };
 		A6096BF6225F968400F5C6EE /* UserTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTokenRepository.swift; sourceTree = "<group>"; };
+		A6096C032260DDBD00F5C6EE /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		A6096C052260DDC400F5C6EE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A6096C072260DDD100F5C6EE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A6096C092260DE0600F5C6EE /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		A6096C0B2260DE0F00F5C6EE /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		A6096C0D2260DE1F00F5C6EE /* CoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocols.swift; sourceTree = "<group>"; };
+		A6096C0F2260DE2A00F5C6EE /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		A6096C112260DE3200F5C6EE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A6096C152260DE4D00F5C6EE /* AlertCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCoordinator.swift; sourceTree = "<group>"; };
+		A6096C1A2260E2C600F5C6EE /* MainSurveysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSurveysViewController.swift; sourceTree = "<group>"; };
+		A6096C1C2260E2DD00F5C6EE /* MakeSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSurveyViewController.swift; sourceTree = "<group>"; };
+		A6096C1E2260E4CA00F5C6EE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		A6096C202260E56D00F5C6EE /* MakeSurveyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSurveyCoordinator.swift; sourceTree = "<group>"; };
+		A6096C222260E96D00F5C6EE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A6096C252260FE3F00F5C6EE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B49CB14D1C61D38A7C2D91E2 /* Pods-SurveysChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveysChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurveysChallengeTests/Pods-SurveysChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF1900C282EAAE726F0C91E9 /* Pods_SurveysChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurveysChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,6 +211,7 @@
 				A6096BC7225F06F000F5C6EE /* Extensions */,
 				A6096BBD225EEDB600F5C6EE /* Models */,
 				A6096BBF225EEE2D00F5C6EE /* ViewModels */,
+				A6096C192260E1F100F5C6EE /* ViewControllers */,
 				A6096BBE225EEE1E00F5C6EE /* Views */,
 				A6096BBC225EEDAA00F5C6EE /* Networking */,
 				A6096BC1225EEE4400F5C6EE /* Resources */,
@@ -211,6 +242,13 @@
 		A6096BBB225EED8C00F5C6EE /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				A6096C022260DDA100F5C6EE /* CoordinatorKit */,
+				A6096C0D2260DE1F00F5C6EE /* CoordinatorProtocols.swift */,
+				A6096C0F2260DE2A00F5C6EE /* CoordinatorFactory.swift */,
+				A6096C112260DE3200F5C6EE /* AppCoordinator.swift */,
+				A6096C222260E96D00F5C6EE /* MainCoordinator.swift */,
+				A6096C202260E56D00F5C6EE /* MakeSurveyCoordinator.swift */,
+				A6096C152260DE4D00F5C6EE /* AlertCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -279,6 +317,7 @@
 				A6096BD1225F080100F5C6EE /* UIView+Extension.swift */,
 				A6096BD3225F081100F5C6EE /* UIColor+Extension.swift */,
 				A6096BD7225F087C00F5C6EE /* Array+Ext.swift */,
+				A6096C1E2260E4CA00F5C6EE /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +339,36 @@
 				A6096BCB225F078600F5C6EE /* DataRequest+Ext.swift */,
 			);
 			path = BaseAPI;
+			sourceTree = "<group>";
+		};
+		A6096C022260DDA100F5C6EE /* CoordinatorKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6096C032260DDBD00F5C6EE /* CoordinatorType.swift */,
+				A6096C052260DDC400F5C6EE /* Coordinator.swift */,
+				A6096C072260DDD100F5C6EE /* Router.swift */,
+				A6096C092260DE0600F5C6EE /* NavigationRouter.swift */,
+				A6096C0B2260DE0F00F5C6EE /* Presentable.swift */,
+			);
+			path = CoordinatorKit;
+			sourceTree = "<group>";
+		};
+		A6096C192260E1F100F5C6EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6096C242260FE3100F5C6EE /* Base */,
+				A6096C1A2260E2C600F5C6EE /* MainSurveysViewController.swift */,
+				A6096C1C2260E2DD00F5C6EE /* MakeSurveyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A6096C242260FE3100F5C6EE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A6096C252260FE3F00F5C6EE /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,25 +635,40 @@
 			files = (
 				A6096BC6225F06D600F5C6EE /* ViewSuspendable.swift in Sources */,
 				A6096BDE225F63AC00F5C6EE /* APIEndpoint.swift in Sources */,
+				A6096C212260E56D00F5C6EE /* MakeSurveyCoordinator.swift in Sources */,
 				A6096BED225F856400F5C6EE /* Question.swift in Sources */,
+				A6096C0E2260DE1F00F5C6EE /* CoordinatorProtocols.swift in Sources */,
+				A6096C262260FE3F00F5C6EE /* BaseViewController.swift in Sources */,
+				A6096C0A2260DE0600F5C6EE /* NavigationRouter.swift in Sources */,
 				A6096BE3225F63FF00F5C6EE /* SurveysAPI.swift in Sources */,
 				A6096BE5225F641F00F5C6EE /* SurveysListRepository.swift in Sources */,
+				A6096C232260E96D00F5C6EE /* MainCoordinator.swift in Sources */,
 				A6096BD2225F080100F5C6EE /* UIView+Extension.swift in Sources */,
+				A6096C122260DE3200F5C6EE /* AppCoordinator.swift in Sources */,
 				A6096BE9225F840200F5C6EE /* Survey.swift in Sources */,
 				A6096BE7225F7F3700F5C6EE /* Constants.swift in Sources */,
 				A6096BF7225F968400F5C6EE /* UserTokenRepository.swift in Sources */,
 				A6096BEF225F8A4600F5C6EE /* Utilities.swift in Sources */,
 				A6096BF1225F8B5300F5C6EE /* Preferences.swift in Sources */,
 				A6096BDC225F639F00F5C6EE /* APIState.swift in Sources */,
+				A6096C162260DE4D00F5C6EE /* AlertCoordinator.swift in Sources */,
+				A6096C1D2260E2DD00F5C6EE /* MakeSurveyViewController.swift in Sources */,
 				A6096BC4225F06C000F5C6EE /* NameDescribable.swift in Sources */,
 				A6096BF3225F8C7500F5C6EE /* UserToken.swift in Sources */,
 				A6096B8E225EED6500F5C6EE /* AppDelegate.swift in Sources */,
 				A6096BCC225F078600F5C6EE /* DataRequest+Ext.swift in Sources */,
+				A6096C082260DDD100F5C6EE /* Router.swift in Sources */,
 				A6096BCE225F07B300F5C6EE /* XCGLogger+Ext.swift in Sources */,
+				A6096C062260DDC400F5C6EE /* Coordinator.swift in Sources */,
 				A6096BF5225F91B000F5C6EE /* AppDelegate+Config.swift in Sources */,
+				A6096C042260DDBD00F5C6EE /* CoordinatorType.swift in Sources */,
+				A6096C1F2260E4CA00F5C6EE /* UIViewController+Ext.swift in Sources */,
+				A6096C102260DE2A00F5C6EE /* CoordinatorFactory.swift in Sources */,
 				A6096BD8225F087C00F5C6EE /* Array+Ext.swift in Sources */,
+				A6096C0C2260DE0F00F5C6EE /* Presentable.swift in Sources */,
 				A6096BD0225F07F600F5C6EE /* UIButton+Extension.swift in Sources */,
 				A6096BD4225F081100F5C6EE /* UIColor+Extension.swift in Sources */,
+				A6096C1B2260E2C600F5C6EE /* MainSurveysViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
