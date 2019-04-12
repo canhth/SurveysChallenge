@@ -14,7 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        config()
+        getLatestTokenIfNeeded() 
+        
         return true
+    }
+    
+    private func getLatestTokenIfNeeded() {
+        //TODO: Check the token expries everytime we make the new request if needed
+        guard Utilities.getUserToken() != nil,
+            let lastLoggedTime = Preferences.shared.lastLoggedTime,
+            let tokenExpiresTime = Preferences.shared.tokenExpiresTime,
+            Date().timeIntervalSince1970 <= lastLoggedTime.timeIntervalSince1970 + TimeInterval(tokenExpiresTime) else {
+                UserTokenRepository.shared.fetch()
+                return
+        }
     }
 }

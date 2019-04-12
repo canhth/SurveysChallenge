@@ -36,7 +36,7 @@ extension UIColor {
             g = (hexInt >> 8) & 0xff
             b = hexInt & 0xff
         default:
-            // TODO:ERROR
+            // TODO: Handle ERROR here
             break
         }
         

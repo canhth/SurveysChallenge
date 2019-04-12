@@ -1,0 +1,41 @@
+//
+//  UserTokenRepository.swift
+//  SurveysChallenge
+//
+//  Created by Canh Tran Wizeline on 4/11/19.
+//  Copyright © 2019 Canh Tran. All rights reserved.
+//
+
+import Foundation
+import RxSwift
+
+/// Use for fetching the latest token
+final class UserTokenRepository {
+    
+    static let shared = UserTokenRepository()
+    
+    let apiState: Variable<APIState> = Variable(.stoped)
+    
+    private var request: Disposable?
+    private let disposeBag = DisposeBag()
+    
+    func fetch() {
+        request?.dispose()
+        apiState.value = .requesting
+        
+        request = SurveysAPI.getNewToken
+            .responseEntity(UserToken.self)
+            .subscribe(onNext: { [unowned self] result in
+                self.apiState.value = .response
+                
+                // Save user information
+                Utilities.saveUserToken(tokenString: result.accessToken)
+                Preferences.shared.tokenExpiresTime = result.expiresIn
+                Preferences.shared.lastLoggedTime = Date(timeIntervalSince1970: TimeInterval(result.createdAt))
+                }, onError: { [unowned self] error in
+                    self.apiState.value = .failed(error)
+            })
+        
+        request?.disposed(by: disposeBag)
+    }
+}

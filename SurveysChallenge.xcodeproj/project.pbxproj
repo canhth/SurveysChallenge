@@ -24,6 +24,18 @@
 		A6096BD2225F080100F5C6EE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BD1225F080100F5C6EE /* UIView+Extension.swift */; };
 		A6096BD4225F081100F5C6EE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BD3225F081100F5C6EE /* UIColor+Extension.swift */; };
 		A6096BD8225F087C00F5C6EE /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BD7225F087C00F5C6EE /* Array+Ext.swift */; };
+		A6096BDC225F639F00F5C6EE /* APIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BDB225F639F00F5C6EE /* APIState.swift */; };
+		A6096BDE225F63AC00F5C6EE /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BDD225F63AC00F5C6EE /* APIEndpoint.swift */; };
+		A6096BE3225F63FF00F5C6EE /* SurveysAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BE2225F63FF00F5C6EE /* SurveysAPI.swift */; };
+		A6096BE5225F641F00F5C6EE /* SurveysListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BE4225F641F00F5C6EE /* SurveysListRepository.swift */; };
+		A6096BE7225F7F3700F5C6EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BE6225F7F3700F5C6EE /* Constants.swift */; };
+		A6096BE9225F840200F5C6EE /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BE8225F840200F5C6EE /* Survey.swift */; };
+		A6096BED225F856400F5C6EE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BEC225F856400F5C6EE /* Question.swift */; };
+		A6096BEF225F8A4600F5C6EE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BEE225F8A4600F5C6EE /* Utilities.swift */; };
+		A6096BF1225F8B5300F5C6EE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF0225F8B5300F5C6EE /* Preferences.swift */; };
+		A6096BF3225F8C7500F5C6EE /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF2225F8C7500F5C6EE /* UserToken.swift */; };
+		A6096BF5225F91B000F5C6EE /* AppDelegate+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF4225F91B000F5C6EE /* AppDelegate+Config.swift */; };
+		A6096BF7225F968400F5C6EE /* UserTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BF6225F968400F5C6EE /* UserTokenRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +83,18 @@
 		A6096BD1225F080100F5C6EE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A6096BD3225F081100F5C6EE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A6096BD7225F087C00F5C6EE /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		A6096BDB225F639F00F5C6EE /* APIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIState.swift; sourceTree = "<group>"; };
+		A6096BDD225F63AC00F5C6EE /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		A6096BE2225F63FF00F5C6EE /* SurveysAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysAPI.swift; sourceTree = "<group>"; };
+		A6096BE4225F641F00F5C6EE /* SurveysListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysListRepository.swift; sourceTree = "<group>"; };
+		A6096BE6225F7F3700F5C6EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6096BE8225F840200F5C6EE /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		A6096BEC225F856400F5C6EE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A6096BEE225F8A4600F5C6EE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A6096BF0225F8B5300F5C6EE /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		A6096BF2225F8C7500F5C6EE /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
+		A6096BF4225F91B000F5C6EE /* AppDelegate+Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Config.swift"; sourceTree = "<group>"; };
+		A6096BF6225F968400F5C6EE /* UserTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTokenRepository.swift; sourceTree = "<group>"; };
 		B49CB14D1C61D38A7C2D91E2 /* Pods-SurveysChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurveysChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurveysChallengeTests/Pods-SurveysChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF1900C282EAAE726F0C91E9 /* Pods_SurveysChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurveysChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				A6096B8D225EED6500F5C6EE /* AppDelegate.swift */,
+				A6096BF4225F91B000F5C6EE /* AppDelegate+Config.swift */,
 				A6096BBB225EED8C00F5C6EE /* Coordinators */,
 				A6096BC7225F06F000F5C6EE /* Extensions */,
 				A6096BBD225EEDB600F5C6EE /* Models */,
@@ -160,7 +185,7 @@
 				A6096BBC225EEDAA00F5C6EE /* Networking */,
 				A6096BC1225EEE4400F5C6EE /* Resources */,
 				A6096BC8225F070900F5C6EE /* Storyboards */,
-				A6096BC0225EEE3C00F5C6EE /* Ultilities */,
+				A6096BC0225EEE3C00F5C6EE /* Utilities */,
 			);
 			path = SurveysChallenge;
 			sourceTree = "<group>";
@@ -193,6 +218,10 @@
 		A6096BBC225EEDAA00F5C6EE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A6096BDA225F638100F5C6EE /* BaseAPI */,
+				A6096BE2225F63FF00F5C6EE /* SurveysAPI.swift */,
+				A6096BE4225F641F00F5C6EE /* SurveysListRepository.swift */,
+				A6096BF6225F968400F5C6EE /* UserTokenRepository.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -200,6 +229,9 @@
 		A6096BBD225EEDB600F5C6EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A6096BE8225F840200F5C6EE /* Survey.swift */,
+				A6096BEC225F856400F5C6EE /* Question.swift */,
+				A6096BF2225F8C7500F5C6EE /* UserToken.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,13 +250,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		A6096BC0225EEE3C00F5C6EE /* Ultilities */ = {
+		A6096BC0225EEE3C00F5C6EE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				A6096BC3225F06C000F5C6EE /* NameDescribable.swift */,
 				A6096BC5225F06D600F5C6EE /* ViewSuspendable.swift */,
+				A6096BEE225F8A4600F5C6EE /* Utilities.swift */,
+				A6096BF0225F8B5300F5C6EE /* Preferences.swift */,
 			);
-			path = Ultilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A6096BC1225EEE4400F5C6EE /* Resources */ = {
@@ -232,6 +266,7 @@
 			children = (
 				A6096B94225EED6600F5C6EE /* Assets.xcassets */,
 				A6096B99225EED6600F5C6EE /* Info.plist */,
+				A6096BE6225F7F3700F5C6EE /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -239,7 +274,6 @@
 		A6096BC7225F06F000F5C6EE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A6096BCB225F078600F5C6EE /* DataRequest+Ext.swift */,
 				A6096BCD225F07B300F5C6EE /* XCGLogger+Ext.swift */,
 				A6096BCF225F07F600F5C6EE /* UIButton+Extension.swift */,
 				A6096BD1225F080100F5C6EE /* UIView+Extension.swift */,
@@ -256,6 +290,16 @@
 				A6096B96225EED6600F5C6EE /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A6096BDA225F638100F5C6EE /* BaseAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A6096BDB225F639F00F5C6EE /* APIState.swift */,
+				A6096BDD225F63AC00F5C6EE /* APIEndpoint.swift */,
+				A6096BCB225F078600F5C6EE /* DataRequest+Ext.swift */,
+			);
+			path = BaseAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,11 +565,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6096BC6225F06D600F5C6EE /* ViewSuspendable.swift in Sources */,
+				A6096BDE225F63AC00F5C6EE /* APIEndpoint.swift in Sources */,
+				A6096BED225F856400F5C6EE /* Question.swift in Sources */,
+				A6096BE3225F63FF00F5C6EE /* SurveysAPI.swift in Sources */,
+				A6096BE5225F641F00F5C6EE /* SurveysListRepository.swift in Sources */,
 				A6096BD2225F080100F5C6EE /* UIView+Extension.swift in Sources */,
+				A6096BE9225F840200F5C6EE /* Survey.swift in Sources */,
+				A6096BE7225F7F3700F5C6EE /* Constants.swift in Sources */,
+				A6096BF7225F968400F5C6EE /* UserTokenRepository.swift in Sources */,
+				A6096BEF225F8A4600F5C6EE /* Utilities.swift in Sources */,
+				A6096BF1225F8B5300F5C6EE /* Preferences.swift in Sources */,
+				A6096BDC225F639F00F5C6EE /* APIState.swift in Sources */,
 				A6096BC4225F06C000F5C6EE /* NameDescribable.swift in Sources */,
+				A6096BF3225F8C7500F5C6EE /* UserToken.swift in Sources */,
 				A6096B8E225EED6500F5C6EE /* AppDelegate.swift in Sources */,
 				A6096BCC225F078600F5C6EE /* DataRequest+Ext.swift in Sources */,
 				A6096BCE225F07B300F5C6EE /* XCGLogger+Ext.swift in Sources */,
+				A6096BF5225F91B000F5C6EE /* AppDelegate+Config.swift in Sources */,
 				A6096BD8225F087C00F5C6EE /* Array+Ext.swift in Sources */,
 				A6096BD0225F07F600F5C6EE /* UIButton+Extension.swift in Sources */,
 				A6096BD4225F081100F5C6EE /* UIColor+Extension.swift in Sources */,

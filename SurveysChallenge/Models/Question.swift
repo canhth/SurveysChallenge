@@ -1,5 +1,5 @@
 //
-//  DataRequest+Ext.swift
+//  Question.swift
 //  SurveysChallenge
 //
 //  Created by Canh Tran Wizeline on 4/11/19.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Question: Decodable {
+    let id: String
+    let text: String
+}
