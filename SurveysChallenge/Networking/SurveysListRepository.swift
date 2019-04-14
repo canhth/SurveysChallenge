@@ -51,7 +51,7 @@ private extension SurveysListRepository {
     }
 
     func fetch() {
-        guard let api = makeAPI() else { return }
+        guard let api = makeAPI(), Utilities.getUserToken() != nil else { return }
 
         request?.dispose()
         apiState.value = .requesting
@@ -69,6 +69,13 @@ private extension SurveysListRepository {
     }
 
     func bind(_ result: [Survey]) {
+        guard !result.isEmpty else {
+            // Stop limit here if there is no more item
+            totalPage = currentPage
+            self.apiState.value = .failed(SurveysError(description: "There is no more survey."))
+            return
+        }
+        currentPage += 1
         surveys.append(contentsOf: result)
     }
 

@@ -5,7 +5,6 @@ target 'SurveysChallenge' do
 
   # Tools
   pod 'XCGLogger', '~> 6.1.0'
-  pod 'Reusable', '~> 4.0'
   pod 'KeychainAccess'
   pod 'SwiftLint'
 
@@ -22,7 +21,6 @@ target 'SurveysChallenge' do
 
   # UI
   pod 'Kingfisher', '~> 5.0'
-  pod 'Reusable', '~> 4.0'
 
   target 'SurveysChallengeTests' do
     inherit! :search_paths 

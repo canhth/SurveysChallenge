@@ -19,6 +19,13 @@ class MainCoordinator: Coordinator, CoordinatorErrorable {
     override func start() {
         let controller = MainSurveysViewController.instantiateFromStoryboard()
         
+        let repository = SurveysListRepository(limitedPerPage: APIConst.pageLimit)
+        let viewModelDependency = SurveysListViewModelDependency(repository: repository)
+        let viewModel = MainSurveysViewModel(viewModelDependency)
+        
+        let dependency = SurveysListViewControllerDependency(viewModel: viewModel)
+
+        controller.inject(dependency)
         controller.onErrorReceived = { [weak self] title, error in
             self?.openAlert(title: title, error: error)
         }
@@ -34,7 +41,7 @@ class MainCoordinator: Coordinator, CoordinatorErrorable {
 private extension MainCoordinator {
     func openTakeSurvey(_ survey: Survey) {
         let controller = MakeSurveyViewController.instantiateFromStoryboard()
-        
+        controller.viewModel = MakeSurveyViewModel(survey)
         router.push(controller, animated: true, hideBottomBar: true)
     }
 }

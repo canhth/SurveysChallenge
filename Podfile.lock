@@ -5,11 +5,6 @@ PODS:
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - Reusable (4.0.5):
-    - Reusable/Storyboard (= 4.0.5)
-    - Reusable/View (= 4.0.5)
-  - Reusable/Storyboard (4.0.5)
-  - Reusable/View (4.0.5)
   - RxAtomic (4.4.2)
   - RxCocoa (4.4.2):
     - RxSwift (>= 4.4.2, ~> 4.4)
@@ -26,7 +21,6 @@ DEPENDENCIES:
   - Alamofire (~> 4.8.1)
   - KeychainAccess
   - Kingfisher (~> 5.0)
-  - Reusable (~> 4.0)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SwiftLint
@@ -34,12 +28,11 @@ DEPENDENCIES:
   - XCGLogger (~> 6.1.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - KeychainAccess
     - Kingfisher
     - ObjcExceptionBridging
-    - Reusable
     - RxAtomic
     - RxCocoa
     - RxSwift
@@ -52,7 +45,6 @@ SPEC CHECKSUMS:
   KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
   Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
   RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
@@ -60,6 +52,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   XCGLogger: 7f7f43f15dfe3a305fa1342b7dc29af656289abd
 
-PODFILE CHECKSUM: 8fcaf4550f9ace5b86c096c787de48238a77d315
+PODFILE CHECKSUM: 440befb62559a88f7575201d96b16af6f78f779e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

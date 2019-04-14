@@ -9,6 +9,15 @@
 import Foundation
 import RxSwift
 
+enum AuthNotification: String, SurveyNotification {
+    
+    /// Informs when the user did log in
+    case logIn
+    
+    /// Informs when the user did log out
+    case logOut
+}
+
 /// Use for fetching the latest token
 final class UserTokenRepository {
     
@@ -32,6 +41,10 @@ final class UserTokenRepository {
                 Utilities.saveUserToken(tokenString: result.accessToken)
                 Preferences.shared.tokenExpiresTime = result.expiresIn
                 Preferences.shared.lastLoggedTime = Date(timeIntervalSince1970: TimeInterval(result.createdAt))
+                
+                // Post notification user did login
+                AuthNotification.logIn.post()
+                
                 }, onError: { [unowned self] error in
                     self.apiState.value = .failed(error)
             })
