@@ -51,7 +51,7 @@ final class MainSurveysViewModel {
         repository.refresh()
     }
     
-    func loadMore() {
+    private func loadMore() {
         repository.fetchNext()
     }
 }

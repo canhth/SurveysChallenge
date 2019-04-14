@@ -1,5 +1,5 @@
 //
-//  UserTokenRepository.swift
+//  UserTokenService.swift
 //  SurveysChallenge
 //
 //  Created by Canh Tran Wizeline on 4/11/19.
@@ -19,13 +19,14 @@ enum AuthNotification: String, SurveyNotification {
 }
 
 /// Use for fetching the latest token
-final class UserTokenRepository {
+final class UserTokenService {
     
-    static let shared = UserTokenRepository()
+    static let shared = UserTokenService()
     
     let apiState: Variable<APIState> = Variable(.stoped)
     
     private var request: Disposable?
+    private(set) var userToken: UserToken?
     private let disposeBag = DisposeBag()
     
     func fetch() {
@@ -36,6 +37,7 @@ final class UserTokenRepository {
             .responseEntity(UserToken.self)
             .subscribe(onNext: { [unowned self] result in
                 self.apiState.value = .response
+                self.userToken = result
                 
                 // Save user information
                 Utilities.saveUserToken(tokenString: result.accessToken)
