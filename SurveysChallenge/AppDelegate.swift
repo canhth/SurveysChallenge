@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let lastLoggedTime = Preferences.shared.lastLoggedTime,
             let tokenExpiresTime = Preferences.shared.tokenExpiresTime,
             Date().timeIntervalSince1970 <= lastLoggedTime.timeIntervalSince1970 + TimeInterval(tokenExpiresTime) else {
-                UserTokenRepository.shared.fetch()
+                UserTokenService.shared.fetch()
                 return
         }
     }
