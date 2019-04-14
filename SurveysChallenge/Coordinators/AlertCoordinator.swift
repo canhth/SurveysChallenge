@@ -24,8 +24,10 @@ final class AlertCoordinator: Coordinator {
             self?.finish(animated: true)
         }
         
+        let message = (error as? SurveysError)?.localizedDescription ?? error.localizedDescription
+        
         let alertController = UIAlertController(title: title ?? "Error",
-                                                message: error.localizedDescription,
+                                                message: message,
                                                 preferredStyle: .alert)
         alertController.addAction(action)
         

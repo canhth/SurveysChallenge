@@ -13,6 +13,7 @@ import XCGLogger
 let logger: XCGLogger? = XCGLogger.customize()
 
 extension AppDelegate {
+    
     func config() {
         // Limit memory cache size to 300 MB
         ImageCache.default.diskStorage.config.sizeLimit = UInt(300 * 1024 * 1024)
@@ -22,5 +23,10 @@ extension AppDelegate {
         
         // Disk image expiration about 1 day.
         ImageCache.default.diskStorage.config.expiration = .days(1)
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.barStyle = .black
+        navigationBarAppearace.tintColor = UIColor.white
+        navigationBarAppearace.barTintColor = UIColor.black.withAlphaComponent(0.8)
     }
 }
