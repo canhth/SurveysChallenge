@@ -49,10 +49,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NGP-0e-idf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="96T-cO-hfC"/>
+                            <constraint firstAttribute="bottom" secondItem="NGP-0e-idf" secondAttribute="bottom" id="9rw-Zt-Gi1"/>
                             <constraint firstItem="DjL-Y6-P9q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I4c-O5-26P"/>
                             <constraint firstItem="DjL-Y6-P9q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="II2-1N-v87"/>
                             <constraint firstItem="NGP-0e-idf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MGm-XE-iOx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NGP-0e-idf" secondAttribute="bottom" id="Owd-m9-KMk"/>
                             <constraint firstItem="Mlz-Co-hWb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rQL-Ra-5Ak"/>
                             <constraint firstItem="Mlz-Co-hWb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.9" id="u4D-1U-7M7"/>
                             <constraint firstItem="NGP-0e-idf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xEx-5G-vRQ"/>
@@ -108,7 +108,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tti-4N-D0W" firstAttribute="bottom" secondItem="TUd-jW-3IH" secondAttribute="bottom" id="3CM-Ln-d0K"/>
+                            <constraint firstAttribute="bottom" secondItem="TUd-jW-3IH" secondAttribute="bottom" id="3CM-Ln-d0K"/>
                             <constraint firstItem="Tti-4N-D0W" firstAttribute="trailing" secondItem="cKH-IJ-z8Q" secondAttribute="trailing" constant="30" id="6Rk-ph-YQ5"/>
                             <constraint firstItem="TUd-jW-3IH" firstAttribute="top" secondItem="Tti-4N-D0W" secondAttribute="top" id="8FT-jQ-chE"/>
                             <constraint firstItem="IJJ-1H-YbM" firstAttribute="leading" secondItem="LO9-F0-Aex" secondAttribute="leading" constant="20" id="DY7-Uz-Kq6"/>
@@ -116,7 +116,7 @@
                             <constraint firstItem="Gcq-fW-9mv" firstAttribute="leading" secondItem="Tti-4N-D0W" secondAttribute="leading" id="GJ2-hC-gES"/>
                             <constraint firstItem="Tti-4N-D0W" firstAttribute="trailing" secondItem="TUd-jW-3IH" secondAttribute="trailing" id="JY0-5f-3ei"/>
                             <constraint firstItem="cKH-IJ-z8Q" firstAttribute="top" secondItem="Tti-4N-D0W" secondAttribute="top" constant="150" id="Jb4-Cb-Kqp"/>
-                            <constraint firstItem="Gcq-fW-9mv" firstAttribute="bottom" secondItem="Tti-4N-D0W" secondAttribute="bottom" id="fQ4-2Q-H2e"/>
+                            <constraint firstItem="Gcq-fW-9mv" firstAttribute="bottom" secondItem="LO9-F0-Aex" secondAttribute="bottom" id="fQ4-2Q-H2e"/>
                             <constraint firstItem="TUd-jW-3IH" firstAttribute="leading" secondItem="Tti-4N-D0W" secondAttribute="leading" id="hEm-5q-XXs"/>
                             <constraint firstItem="Gcq-fW-9mv" firstAttribute="trailing" secondItem="Tti-4N-D0W" secondAttribute="trailing" id="kis-z3-Ove"/>
                             <constraint firstItem="Gcq-fW-9mv" firstAttribute="top" secondItem="Tti-4N-D0W" secondAttribute="top" id="t80-Q6-2AU"/>

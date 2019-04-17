@@ -54,9 +54,7 @@ final class MainSurveysViewController: BaseViewController, SurveyListViewType {
     private func setupUI() {
         loadingIndicatorView.startAnimating()
         pageControl.customBorderColor = .white
-        tableView.estimatedRowHeight = tableView.frame.size.height
         tableView.addSubview(refreshControl)
-        tableView.rowHeight = tableView.frame.size.height
         tableView.register(UINib(nibName: SurveyCell.typeName, bundle: nil), forCellReuseIdentifier: SurveyCell.typeName) 
     }
 
@@ -76,7 +74,7 @@ final class MainSurveysViewController: BaseViewController, SurveyListViewType {
             .filter({ [unowned self] in self.refreshControl.isRefreshing })
             .bind(to: viewModel.onRefresh)
             .disposed(by: disposeBag)
-
+        
         tableView.rx.contentOffset
             .filter { [unowned self] offset in
                 guard self.tableView.contentSize.height > 0 else { return false }
@@ -116,7 +114,7 @@ final class MainSurveysViewController: BaseViewController, SurveyListViewType {
     }
 }
 
-extension MainSurveysViewController: UITableViewDataSource, UITableViewDelegate {
+extension MainSurveysViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.surveys.count
     }
@@ -131,6 +129,16 @@ extension MainSurveysViewController: UITableViewDataSource, UITableViewDelegate 
             }
         }
         return cell
+    }
+}
+
+extension MainSurveysViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.size.height
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.size.height
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
